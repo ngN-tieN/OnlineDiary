@@ -1,18 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OnlineDiary.Utils;
-
-namespace OnlineDiary.Models
+﻿namespace OnlineDiary.Models
 {
-    public class DiaryContext:DbContext
+    public class DiaryContext
     {
-        public DbSet<Diary> Diaries { get; set; }
-        public DbSet<User> Users { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var connectionString = GetEnvVar.GetEnvString("MSSQL_CONNECTION_STRING");
-            optionsBuilder.UseSqlServer(connectionString);
-        }
-    }
-
 
 }
