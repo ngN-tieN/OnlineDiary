@@ -11,6 +11,7 @@
             foreach (var line in File.ReadAllLines(path))
             {
                 var parts = line.Split('=', 2, StringSplitOptions.RemoveEmptyEntries);
+                Console.WriteLine(parts[0], parts[1]);
                 Environment.SetEnvironmentVariable(parts[0], parts[1]);
             }
         }
