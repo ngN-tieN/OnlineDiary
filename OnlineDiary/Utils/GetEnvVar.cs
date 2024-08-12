@@ -7,7 +7,8 @@
             var root = Directory.GetCurrentDirectory();
             var dotenv = Path.Combine(root, ".env");
             DotEnv.Load(dotenv);
-            return Environment.GetEnvironmentVariable("MSSQL_CONNECTION_STRING");
+            
+            return Environment.GetEnvironmentVariable(key);
         }
     }
 }
