@@ -12,7 +12,7 @@ using OnlineDiary.Models;
 namespace OnlineDiary.Migrations
 {
     [DbContext(typeof(DiaryContext))]
-    [Migration("20240812093315_InitialCreate")]
+    [Migration("20240812112618_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
